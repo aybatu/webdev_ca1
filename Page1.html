@@ -3,19 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>EMPLOYEE INFORMATION</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!--
+navigation bar
+-->
+<nav id="nav-bar">
+    <div>
+        <!-- navigation bar page hyper links-->
+        <a href="Page1.html">EMPLOYEE INFORMATION</a>
+        <a href="Page2.html">EMPLOYEE JOB INFORMATION</a>
+        <a href="Page3.html">DEPARTMENTS</a>
+        <a href="Page4.html">MANAGERS</a>
+        <a href="Page5.html">EMPLOYEE SALARY</a>
+    </div>
+</nav>
+<!--
+Table header outside of table.
+-->
 
-<table class="center">
+<header>
+    <h1>EMPLOYEE INFORMATION TABLE</h1>
+</header>
+
+<!--
+employee table
+-->
+
+<table class="center" data-record-type="Employees">
     <thead>
     <tr>
-        <th rowspan="2">Employee ID</th>
+        <th rowspan="2">Employee ID<br><img class="img-center" src="img/primary_key.png" alt="Primary-key"></th>
         <th colspan="2">Employee Name</th>
         <th rowspan="2">Employee Gender</th>
         <th rowspan="2">Employee Date of Birth</th>
         <th rowspan="2">Employee Hire Date</th>
-        <th rowspan="2">Employee Salary</th>
+        <th rowspan="2">Employee Salary(€)</th>
     </tr>
     <tr>
         <th>First Name</th>
@@ -24,9 +48,97 @@
     </thead>
     <tbody>
         <tr>
-
+            <td>000001</td>
+            <td>Hasan</td>
+            <td>Eren</td>
+            <td>Male</td>
+            <td>01/05/1996</td>
+            <td>02/12/2021</td>
+            <td>2300</td>
+        </tr>
+        <tr>
+            <td>000002</td>
+            <td>Micheal</td>
+            <td>Slovski</td>
+            <td>Male</td>
+            <td>23/08/1992</td>
+            <td>12/10/2018</td>
+            <td>2800</td>
+        </tr>
+        <tr>
+            <td>000003</td>
+            <td>Aylin</td>
+            <td>Ozdemir</td>
+            <td>Female</td>
+            <td>20/10/1998</td>
+            <td>08/10/2022</td>
+            <td>2100</td>
+        </tr>
+        <tr>
+            <td>000004</td>
+            <td>Mike</td>
+            <td>Tidus</td>
+            <td>Male</td>
+            <td>18/05/1995</td>
+            <td>02/12/2021</td>
+            <td>2300</td>
+        </tr>
+        <tr>
+            <td>000005</td>
+            <td>Hasan</td>
+            <td>Cagri</td>
+            <td>Male</td>
+            <td>29/05/1993</td>
+            <td>02/01/2001</td>
+            <td>4650</td>
+        </tr>
+        <tr>
+            <td>000006</td>
+            <td>Siti</td>
+            <td>Malek</td>
+            <td>Female</td>
+            <td>30/12/1980</td>
+            <td>30/01/2016</td>
+            <td>4250</td>
+        </tr>
+        <tr>
+            <td>000007</td>
+            <td>Tara</td>
+            <td>Nicarelmen</td>
+            <td>Female</td>
+            <td>14/02/2001</td>
+            <td>02/12/2020</td>
+            <td>2400</td>
+        </tr>
+        <tr>
+            <td>000008</td>
+            <td>James</td>
+            <td>Coors</td>
+            <td>Male</td>
+            <td>01/05/1996</td>
+            <td>02/04/2019</td>
+            <td>2750</td>
+        </tr>
+        <tr>
+            <td>000009</td>
+            <td>Jenny</td>
+            <td>Frank</td>
+            <td>Female</td>
+            <td>23/05/2002</td>
+            <td>23/01/2022</td>
+            <td>2150</td>
+        </tr>
+        <tr>
+            <td>000010</td>
+            <td>David</td>
+            <td>Horner</td>
+            <td>Male</td>
+            <td>01/09/1975</td>
+            <td>02/12/2005</td>
+            <td>5250</td>
         </tr>
     </tbody>
 </table>
+
 </body>
 </html>
