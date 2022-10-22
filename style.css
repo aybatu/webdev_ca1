@@ -49,6 +49,12 @@ thead {
     position: sticky;
     top: 0;
 }
-
+/*
+https://www.w3schools.com/howto/howto_css_table_zebra.asp
+zebra strip styles codes for the table copied from above link.
+ */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
 
