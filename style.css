@@ -60,15 +60,13 @@ thead {
 }
 /*
 https://www.w3schools.com/howto/howto_css_table_zebra.asp
-zebra strip styles codes for the table copied from above link.
+zebra strip styles codes for the table copied from above link. First Name and Last Name was also
+had colored grey. I fixed by adjusting code with below link.
+https://stackoverflow.com/questions/43493583/tbody-element-breaking-nth-child-selector
  */
-tr:nth-child(even) {
+tbody:nth-child(even) tr:nth-child(odd){
     background-color: #f2f2f2;
 }
 
-.clear-background {
-    background-color: white;
-    opacity: 0.99;
-}
 
 
