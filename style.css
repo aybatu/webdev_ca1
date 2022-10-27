@@ -8,6 +8,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     font: inherit;
     vertical-align: baseline;
 }
+
 /*
 nav bar style
  */
@@ -16,9 +17,11 @@ nav bar style
     white-space: nowrap;
     margin: 24px;
 }
+
 #nav-bar, a {
     padding: 12px;
 }
+
 /*
 Changes table position to center of page
  */
@@ -27,6 +30,7 @@ Changes table position to center of page
     margin-right: auto;
     width: 50%;
 }
+
 /*
 center and resize key images
  */
@@ -58,13 +62,16 @@ thead {
     position: sticky;
     top: 0;
 }
+th {
+    text-align: center;
+}
 /*
 https://www.w3schools.com/howto/howto_css_table_zebra.asp
 zebra strip styles codes for the table copied from above link. First Name and Last Name was also
 had colored grey. I fixed by adjusting code with below link.
 https://stackoverflow.com/questions/43493583/tbody-element-breaking-nth-child-selector
  */
-tbody:nth-child(even) tr:nth-child(odd){
+tbody:nth-child(even) tr:nth-child(odd) {
     background-color: #f2f2f2;
 }
 
