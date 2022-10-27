@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>EMPLOYEE</title>
+    <title>Employee</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,38 +12,35 @@ navigation bar
 <nav id="nav-bar">
     <div>
         <!-- navigation bar page hyper links-->
-        <a href="Employee.html">EMPLOYEE</a>
-        <a href="Job_Title.html">EMPLOYEE JOB INFORMATION</a>
-        <a href="Page3.html">DEPARTMENTS</a>
-        <a href="Page4.html">MANAGERS</a>
-        <a href="Page5.html">EMPLOYEE SALARY</a>
+        <a href="employee.html">EMPLOYEE</a>
+        <a href="job_title.html">JOB TITLE</a>
+        <a href="salary.html">SALARY</a>
+        <a href="salary_history.html">SALARY HISTORY</a>
+        <a href="department.html">DEPARTMENT</a>
+        <a href="employee_department.html">EMPLOYEE DEPATRMENT</a>
+        <a href="department_manager.html">DEPARTMENT MANAGER</a>
+        <a href="department_manager_history.html">DEPARTMENT MANAGER HISTORY</a>
     </div>
 </nav>
-<!--
-Table header outside of table.
--->
-
-<header>
-    <h1>EMPLOYEE TABLE</h1>
-</header>
 
 <!--
 employee table
 -->
 
 <table class="center" data-record-type="Employees">
+    <caption>EMPLOYEE TABLE</caption><!--Table header outside of table.-->
     <thead>
     <tr>
-        <th rowspan="2">Employee ID<br><img class="img-center" src="img/primary_key.png" alt="Employee_Primary_Key"></th>
-        <th colspan="2">Employee Name</th>
-        <th rowspan="2">Employee Gender</th>
-        <th rowspan="2">Employee Date of Birth</th>
-        <th rowspan="2">Employee Hire Date</th>
-        <th rowspan="2">Employee Salary<br><img class="img-center" src="img/foreign_key.png" alt="Foreign-key"></th>
-        <th rowspan="2">Job Title<br><img class="img-center" src="img/foreign_key.png" alt="Foreign-key"></th>
-        <th rowspan="2">Employee Status</th>
+        <th rowspan="2">Employee ID<br><span class="datatype">(int)</span><br><img class="img-center" src="img/primary_key.png" alt="Employee_Primary_Key"></th>
+        <th colspan="2">Employee Name<br><span class="datatype">(char)</span></th>
+        <th rowspan="2">Employee Gender<br><span class="datatype">(char)</span></th>
+        <th rowspan="2">Employee Date of Birth<br><span class="datatype">(datetime)</span></th>
+        <th rowspan="2">Employee Hire Date<br><span class="datatype">(datetime)</span></th>
+        <th rowspan="2">Employee Salary<br><span class="datatype">(int)</span><br><img class="img-center" src="img/foreign_key.png" alt="Foreign-key"></th>
+        <th rowspan="2">Job Title<br><span class="datatype">(int)</span><br><img class="img-center" src="img/foreign_key.png" alt="Foreign-key"></th>
+        <th rowspan="2">Employee Status<br><span class="datatype">(boolean)</span></th>
     </tr>
-    <tr class="clear-background">
+    <tr>
         <th>First Name</th>
         <th>Last Name</th>
     </tr>
@@ -54,8 +51,8 @@ employee table
         <td>Hasan</td>
         <td>Eren</td>
         <td>Male</td>
-        <td>01/05/1996</td>
-        <td>02/12/2021</td>
+        <td>01-05-1996</td>
+        <td>02-12-2021</td>
         <td>1</td>
         <td>4</td>
         <td>Active</td>
@@ -65,8 +62,8 @@ employee table
         <td>Micheal</td>
         <td>Slovski</td>
         <td>Male</td>
-        <td>23/08/1992</td>
-        <td>12/10/2018</td>
+        <td>23-08-1992</td>
+        <td>12-10-2018</td>
         <td>2</td>
         <td>2</td>
         <td>Active</td>
@@ -76,8 +73,8 @@ employee table
         <td>Aylin</td>
         <td>Ozdemir</td>
         <td>Female</td>
-        <td>20/10/1998</td>
-        <td>08/10/2022</td>
+        <td>20-10-1998</td>
+        <td>08-10-2022</td>
         <td>3</td>
         <td>3</td>
         <td>Active</td>
@@ -87,8 +84,8 @@ employee table
         <td>Mike</td>
         <td>Tidus</td>
         <td>Male</td>
-        <td>18/05/1995</td>
-        <td>02/12/2021</td>
+        <td>18-05-1995</td>
+        <td>02-12-2021</td>
         <td>4</td>
         <td>5</td>
         <td>Active</td>
@@ -98,8 +95,8 @@ employee table
         <td>Hasan</td>
         <td>Cagri</td>
         <td>Male</td>
-        <td>29/05/1993</td>
-        <td>02/01/2001</td>
+        <td>29-05-1993</td>
+        <td>02-01-2001</td>
         <td>5</td>
         <td>1</td>
         <td>Active</td>
@@ -109,8 +106,8 @@ employee table
         <td>Siti</td>
         <td>Malek</td>
         <td>Female</td>
-        <td>30/12/1980</td>
-        <td>30/01/2016</td>
+        <td>30-12-1980</td>
+        <td>30-01-2016</td>
         <td>6</td>
         <td>1</td>
         <td>Active</td>
@@ -120,8 +117,8 @@ employee table
         <td>Tara</td>
         <td>Nicarelmen</td>
         <td>Female</td>
-        <td>14/02/2001</td>
-        <td>02/12/2020</td>
+        <td>14-02-2001</td>
+        <td>02-12-2020</td>
         <td>7</td>
         <td>5</td>
         <td>Active</td>
@@ -131,8 +128,8 @@ employee table
         <td>James</td>
         <td>Coors</td>
         <td>Male</td>
-        <td>01/05/1996</td>
-        <td>02/04/2019</td>
+        <td>01-05-1996</td>
+        <td>02-04-2019</td>
         <td>8</td>
         <td>1</td>
         <td>Active</td>
@@ -142,8 +139,8 @@ employee table
         <td>Jenny</td>
         <td>Frank</td>
         <td>Female</td>
-        <td>23/05/2002</td>
-        <td>23/01/2022</td>
+        <td>23-05-2002</td>
+        <td>23-01-2022</td>
         <td>9</td>
         <td>6</td>
         <td>Active</td>
@@ -153,8 +150,8 @@ employee table
         <td>David</td>
         <td>Horner</td>
         <td>Male</td>
-        <td>01/09/1975</td>
-        <td>02/12/2005</td>
+        <td>01-09-1975</td>
+        <td>02-12-2005</td>
         <td>10</td>
         <td>1</td>
         <td>Active</td>

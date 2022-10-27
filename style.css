@@ -28,6 +28,7 @@ Changes table position to center of page
 .center {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5%;
     width: 50%;
 }
 
@@ -49,6 +50,7 @@ header {
 /*
 employee information table border style and text align
  */
+
 table, td, th {
     white-space: nowrap;
     border: 2px solid black;
@@ -62,16 +64,26 @@ thead {
     position: sticky;
     top: 0;
 }
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
 th {
     text-align: center;
+}
+.datatype {
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
 }
 /*
 https://www.w3schools.com/howto/howto_css_table_zebra.asp
 zebra strip styles codes for the table copied from above link. First Name and Last Name was also
-had colored grey. I fixed by adjusting code with below link.
-https://stackoverflow.com/questions/43493583/tbody-element-breaking-nth-child-selector
+had colored grey. I just did a guess and fixed it by adding tbody front of the selection. And istead
+of even used odd.
  */
-tbody:nth-child(even) tr:nth-child(odd) {
+tbody tr:nth-child(odd) {
     background-color: #f2f2f2;
 }
 
