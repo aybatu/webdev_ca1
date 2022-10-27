@@ -1,3 +1,16 @@
+/*
+Table reset before loading page
+ */
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+/*
+nav bar style
+ */
 #nav-bar {
     text-align: center;
     white-space: nowrap;
@@ -6,26 +19,22 @@
 #nav-bar, a {
     padding: 12px;
 }
-
-table, caption, tbody, tfoot, thead, tr, th, td {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-}
-
+/*
+Changes table position to center of page
+ */
 .center {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-
+/*
+center and resize key images
+ */
 .img-center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 18px;
     padding-top: 8px;
 }
 
@@ -55,6 +64,11 @@ zebra strip styles codes for the table copied from above link.
  */
 tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+.clear-background {
+    background-color: white;
+    opacity: 0.99;
 }
 
 
