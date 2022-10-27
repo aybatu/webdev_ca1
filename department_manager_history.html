@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Department Manager History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--
+navigation bar
+-->
+<nav id="nav-bar">
+    <div>
+        <!-- navigation bar page hyper links-->
+        <a href="employee.html">EMPLOYEE</a>
+        <a href="job_title.html">JOB TITLE</a>
+        <a href="salary.html">SALARY</a>
+        <a href="salary_history.html">SALARY HISTORY</a>
+        <a href="department.html">DEPARTMENT</a>
+        <a href="employee_department.html">EMPLOYEE DEPATRMENT</a>
+        <a href="department_manager.html">DEPARTMENT MANAGER</a>
+        <a href="department_manager_history.html">DEPARTMENT MANAGER HISTORY</a>
+    </div>
+</nav><!-- End of navbar -->
+
+
+<table class="center" data-record-type="Department_Manager_History">
+    <caption>DEPARTMENT MANAGER HISTORY TABLE</caption><!--Table header outside of table.-->
+    <!-- Table Head-->
+    <thead>
+    <tr>
+        <th>Department Manager History ID<br><span class="datatype">(int)</span><br><img class="img-center" src="img/primary_key.png" alt="Department_Manager_History_Primary_Key"></th>
+        <th>Department ID<br><span class="datatype">(int)</span><br><img class="img-center" src="img/foreign_key.png" alt="Department_Foreign_Key"></th>
+        <th>Employee ID<br><span class="datatype">(int)</span><br><img class="img-center" src="img/foreign_key.png" alt="Employee_Foreign_Key"></th>
+        <th>Sorted Counter<br><span class="datatype">(int)</span></th>
+        <th>Management Start Date<br><span class="datatype">(datetime)</span></th>
+        <th>Management End Date<br><span class="datatype">(datetime)</span></th>
+    </tr>
+    </thead><!-- Table head end-->
+    <!-- Table Body -->
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+        <td>0</td>
+        <td>01-01-2004</td>
+        <td>null</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>1</td>
+        <td>10</td>
+        <td>0</td>
+        <td>02-12-2005</td>
+        <td>31-12-20014</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>2</td>
+        <td>10</td>
+        <td>1</td>
+        <td>01-01-2015</td>
+        <td>null</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>3</td>
+        <td>6</td>
+        <td>0</td>
+        <td>30-01-2016</td>
+        <td>31-05-2020</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>4</td>
+        <td>8</td>
+        <td>0</td>
+        <td>02-04-2019</td>
+        <td>null</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>2</td>
+        <td>6</td>
+        <td>1</td>
+        <td>01-06-2020</td>
+        <td>null</td>
+    </tr>
+    </tbody><!-- Table body end -->
+</table><!-- Department Manager History Table End -->
+</body>
+</html>
